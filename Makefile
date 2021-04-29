@@ -3,7 +3,13 @@ PROJ_NAME = Activity1
 BUILD_DIR = Build
 
 # All Source code files
-SRC = main.c
+SRC = main.c\
+src/activity1/Button_setup.c\
+src/activity2/InitADC.c\
+src/activity4/InitUSART.c\
+src/activity2/ReadADC.c\
+src/activity4/USARTWrite_char.c\
+src/activity3/pwmSet.c
 
 
 # All header file paths
@@ -51,4 +57,3 @@ clean:
 # Remove all the build files and generated document files
 	rm -rf $(call FixPath,$(BUILD_DIR)/*)
 	make -C documentation clean
-
