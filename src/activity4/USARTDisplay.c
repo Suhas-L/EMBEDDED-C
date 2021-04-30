@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "library.h"
 void USARTDisplay (uint16_t temp)
 { uint16_t i;
   if(temp<=200)
