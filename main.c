@@ -5,7 +5,7 @@
 int main(void)
 {
    Button(); //Configure the Buttons.
-   Led; //Configure the LED.
+   Led(); //Configure the LED.
    INITADC(); //Configure the ADC.
    uint16_t temp;//To store the ADC value.
    SETPWM(); //Configure the PWM Output.
