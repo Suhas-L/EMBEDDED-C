@@ -1,4 +1,3 @@
-
 #ifndef __LIB_H__
 #define __LIB_H__
 /**
@@ -59,6 +58,18 @@ void InitUSART(uint16_t );
  */
 void USARTWrite_char(char );
 
+/**
+ * @brief Function to Display the character
+ * 
+ * @param The temperature ADC value
+ */
+void USARTDisplay(uint16_t );
+
+/**
+ * @brief Function to send value to pwm pin
+ * 
+ * @param The temperature ADC value
+ */
+void pwm_out(uint16_t );
+
 #endif /* __LIB_H__ */
-
-
