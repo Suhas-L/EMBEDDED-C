@@ -1,5 +1,5 @@
-#include "library.h"
-void pwm_out(uint16_t temp){
+#include "Activity_3.h"
+void OUT_PWM(uint16_t temp){
   if(temp<=200)
         {
             PWM_TempValue=51;
