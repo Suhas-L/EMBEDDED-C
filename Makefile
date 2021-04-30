@@ -4,14 +4,14 @@ BUILD_DIR = Build
 
 # All Source code files
 SRC = main.c\
-src/activity1/Button_setup.c\
-src/activity2/InitADC.c\
-src/activity4/InitUSART.c\
-src/activity2/ReadADC.c\
-src/activity4/USARTWrite_char.c\
-src/activity3/pwmSet.c\
-src/activity4/USARTDisplay.c\
-src/activity3/pwm_out.c
+src/activity1/Button.c\
+src/activity2/INITADC.c\
+src/activity4/INITUSART.c\
+src/activity2/READADC.c\
+src/activity4/USARTWRITE_CHAR.c\
+src/activity3/SETPWM.c\
+src/activity4/USARTDISPLAY.c\
+src/activity3/OUT_PWM.c
 
 # All header file paths
 INC = -I inc
