@@ -5,7 +5,7 @@
 int main(void)
 {
    Button(); //Configure the Buttons.
-   Led(); //Configure the LED.
+   Led; //Configure the LED.
    INITADC(); //Configure the ADC.
    uint16_t temp;//To store the ADC value.
    SETPWM(); //Configure the PWM Output.
@@ -15,7 +15,7 @@ while(1)
     if(Heater && PersonSitting)
     {
         ON_LED;
-        temp=ReadADC(0); //reading the adjusted temp value.
+        temp=READADC(0); //reading the adjusted temp value.
         OUT_PWM(temp);  //pwm generation.
         USARTDISPLAY(temp);
 
