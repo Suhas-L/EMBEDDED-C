@@ -1,26 +1,30 @@
-#include "library.h"
+#include "Activity_1.h"
+#include "Activity_2.h"
+#include "Activity_3.h"
+#include "Activity_4.h"
 int main(void)
 {
-   Button_setup();
-   LED_setup;
-   InitADC();
-   uint16_t temp;
-   pwmSet();
+   Button(); //Configure the Buttons.
+   Led; //Configure the LED.
+   INITADC(); //Configure the ADC.
+   uint16_t temp;//To store the ADC value.
+   SETPWM(); //Configure the PWM Output.
+   INITUSART(103); // Setup for USART protocol. 
 while(1)
 {
-    if(Heater_ON && PersonSeated)
+    if(Heater && PersonSitting)
     {
-        LED_ON;
-       InitUSART(103);
-        temp=ReadADC(0);
-        pwm_out(temp);
-       USARTDisplay(temp);
+        LED;
+        temp=ReadADC(0); //reading the adjusted temp value.
+        OUT_PWM(temp);  //pwm generation.
+        USARTDISPLAY(temp);
 
     }
     else
     {
-        LED_OFF;
+        OFF_LED;
         _delay_ms(200);
+        PWM_TempValue = 0; //make pwm out zero.
     }
 
 }
