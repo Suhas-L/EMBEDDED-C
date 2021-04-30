@@ -14,7 +14,7 @@ while(1)
 {
     if(Heater && PersonSitting)
     {
-        LED;
+        ON_LED;
         temp=ReadADC(0); //reading the adjusted temp value.
         OUT_PWM(temp);  //pwm generation.
         USARTDISPLAY(temp);
