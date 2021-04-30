@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "library.h"
 uint16_t ReadADC(uint8_t CH){
 ADMUX&=0xf8;
 CH=CH&0x03;
